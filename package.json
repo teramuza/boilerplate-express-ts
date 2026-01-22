@@ -1,7 +1,7 @@
 {
-  "name": "boilerplate-ts-express",
+  "name": "boilerplate-express-ts",
   "version": "1.0.0",
-  "description": "TypeScript Express Boilerplate",
+  "description": "Express TypeScript boilerplate with Sequelize, JWT auth, and security best practices",
   "main": "dist/server.js",
   "engines": {
     "node": ">=20.0.0",
@@ -51,12 +51,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/teramuza/boilerplate-ts-express.git"
+    "url": "git+https://github.com/teramuza/Boilerplate-Express-TS.git"
   },
   "bugs": {
-    "url": "https://github.com/teramuza/boilerplate-ts-express/issues"
+    "url": "https://github.com/teramuza/Boilerplate-Express-TS/issues"
   },
-  "homepage": "https://github.com/teramuza/boilerplate-ts-express#readme",
+  "homepage": "https://github.com/teramuza/Boilerplate-Express-TS#readme",
   "license": "MIT",
   "dependencies": {
     "bcrypt": "^5.1.1",

@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.0] - 2026-01-22
 
 ### Added
-- Initial release of TypeScript Express Boilerplate
+- Initial release of Boilerplate-Express-TS
 - BaseController with helper methods for parameter extraction
 - ResponseHandler for centralized response handling
 - Authentication middleware with JWT support
@@ -121,4 +121,4 @@ This project follows [Semantic Versioning](https://semver.org/):
 
 ---
 
-[1.0.0]: https://github.com/teramuza/boilerplate-ts-express/releases/tag/v1.0.0
+[1.0.0]: https://github.com/teramuza/Boilerplate-Express-TS/releases/tag/v1.0.0

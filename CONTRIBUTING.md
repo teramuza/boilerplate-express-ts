@@ -27,14 +27,14 @@ Thank you for your interest in contributing! This guide covers development setup
 
 ```bash
 # 1. Fork the repository on GitHub
-# Click the "Fork" button at https://github.com/teramuza/boilerplate-ts-express
+# Click the "Fork" button at https://github.com/teramuza/Boilerplate-Express-TS
 
 # 2. Clone your fork
-git clone https://github.com/YOUR_USERNAME/boilerplate-ts-express.git
-cd boilerplate-ts-express
+git clone https://github.com/YOUR_USERNAME/Boilerplate-Express-TS.git
+cd Boilerplate-Express-TS
 
 # 3. Add upstream remote
-git remote add upstream https://github.com/teramuza/boilerplate-ts-express.git
+git remote add upstream https://github.com/teramuza/Boilerplate-Express-TS.git
 
 # 4. Install dependencies
 npm install             # or: yarn install

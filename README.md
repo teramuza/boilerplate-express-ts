@@ -1,13 +1,13 @@
-# TypeScript Express Boilerplate
+# Boilerplate-Express-TS
 
-Express.js boilerplate with TypeScript, security middleware, and maintainable architecture.
+Express.js boilerplate with TypeScript, Sequelize ORM, JWT authentication, and security best practices.
 
 [![Node.js](https://img.shields.io/badge/node-%3E%3D20.0.0-brightgreen)](https://nodejs.org/)
 [![TypeScript](https://img.shields.io/badge/typescript-5.7.2-blue)](https://www.typescriptlang.org/)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
-[![GitHub Stars](https://img.shields.io/github/stars/teramuza/boilerplate-ts-express?style=social)](https://github.com/teramuza/boilerplate-ts-express/stargazers)
-[![GitHub Issues](https://img.shields.io/github/issues/teramuza/boilerplate-ts-express)](https://github.com/teramuza/boilerplate-ts-express/issues)
-[![GitHub Forks](https://img.shields.io/github/forks/teramuza/boilerplate-ts-express?style=social)](https://github.com/teramuza/boilerplate-ts-express/network/members)
+[![GitHub Stars](https://img.shields.io/github/stars/teramuza/Boilerplate-Express-TS?style=social)](https://github.com/teramuza/Boilerplate-Express-TS/stargazers)
+[![GitHub Issues](https://img.shields.io/github/issues/teramuza/Boilerplate-Express-TS)](https://github.com/teramuza/Boilerplate-Express-TS/issues)
+[![GitHub Forks](https://img.shields.io/github/forks/teramuza/Boilerplate-Express-TS?style=social)](https://github.com/teramuza/Boilerplate-Express-TS/network/members)
 
 ---
 
@@ -167,15 +167,15 @@ MIT License - see [LICENSE](LICENSE) file for details.
 **Teuku Raja**
 
 - GitHub: [@teramuza](https://github.com/teramuza)
-- Repository: [boilerplate-ts-express](https://github.com/teramuza/boilerplate-ts-express)
+- Repository: [Boilerplate-Express-TS](https://github.com/teramuza/Boilerplate-Express-TS)
 
 ---
 
 ## 🆘 Support
 
 - **Documentation:** [QUICK_START.md](QUICK_START.md) for usage guide
-- **Issues:** [Report bugs or questions](https://github.com/teramuza/boilerplate-ts-express/issues)
-- **Pull Requests:** [Contribute improvements](https://github.com/teramuza/boilerplate-ts-express/pulls)
+- **Issues:** [Report bugs or questions](https://github.com/teramuza/Boilerplate-Express-TS/issues)
+- **Pull Requests:** [Contribute improvements](https://github.com/teramuza/Boilerplate-Express-TS/pulls)
 - **Architecture:** [CONTRIBUTING.md](CONTRIBUTING.md) for technical details
 
 ---
