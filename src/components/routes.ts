@@ -5,7 +5,7 @@ import exampleRouter from './example';
 const router: Router = express.Router();
 
 // Public routes
-// router.use('/example', exampleRouter);
+router.use('/example', exampleRouter);
 
 // Protected routes (uncomment to use)
 // router.use(authMiddleware);
