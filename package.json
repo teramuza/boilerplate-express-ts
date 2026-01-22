@@ -41,9 +41,22 @@
     "nodejs",
     "backend",
     "jwt",
-    "authentication"
+    "authentication",
+    "sequelize",
+    "postgresql"
   ],
-  "author": "",
+  "author": {
+    "name": "Teuku Raja",
+    "url": "https://github.com/teramuza"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teramuza/boilerplate-ts-express.git"
+  },
+  "bugs": {
+    "url": "https://github.com/teramuza/boilerplate-ts-express/issues"
+  },
+  "homepage": "https://github.com/teramuza/boilerplate-ts-express#readme",
   "license": "MIT",
   "dependencies": {
     "bcrypt": "^5.1.1",
