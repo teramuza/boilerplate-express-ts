@@ -1,0 +1,61 @@
+{
+  "name": "boilerplate-ts-express",
+  "version": "1.0.0",
+  "description": "TypeScript Express Boilerplate",
+  "main": "dist/server.js",
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
+  },
+  "scripts": {
+    "prepare:dev": "cp .env.development .env",
+    "prepare:prod": "cp .env.production .env",
+    "dev": "nodemon -r tsconfig-paths/register src/server.ts",
+    "start": "ts-node -r tsconfig-paths/register src/server.ts",
+    "build": "npm run clean && tsc",
+    "serve": "node dist/server.js",
+    "clean": "rm -rf dist",
+    "type-check": "tsc --noEmit",
+    "format": "prettier --write \"src/**/*.{ts,js,json}\"",
+    "format:check": "prettier --check \"src/**/*.{ts,js,json}\"",
+    "lint": "npm run type-check && npm run format:check",
+    "check-updates": "npm outdated || yarn outdated",
+    "update-deps": "npm update || yarn upgrade",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "echo \"✅ Dependencies installed successfully!\""
+  },
+  "packageManager": "npm@10.0.0",
+  "keywords": [
+    "typescript",
+    "express",
+    "boilerplate",
+    "rest-api",
+    "nodejs",
+    "backend",
+    "jwt",
+    "authentication"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "express-rate-limit": "^7.4.1",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/node": "^20.17.10",
+    "nodemon": "^3.1.7",
+    "prettier": "^3.4.2",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.7.2"
+  }
+}
