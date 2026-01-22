@@ -17,6 +17,7 @@ const sequelize =
 
 // Initialize models
 const models = {
+    User: UserModel(sequelize),
     // Add more models here
 };
 
