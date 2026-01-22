@@ -1,6 +1,7 @@
 import { Request, Response, NextFunction } from 'express';
 import jwt from 'jsonwebtoken';
 import ErrorCodes from '@constant/ErrorCodes';
+import { ENV } from '@constant/Environment';
 
 interface AuthPayload {
     sub: string; // user.id
@@ -33,7 +34,7 @@ const authMiddleware = (req: Request, res: Response, next: NextFunction) => {
     try {
         const decoded = jwt.verify(
             token,
-            process.env.JWT_SECRET_KEY!
+            process.env[ENV.JWT_SECRET_KEY]!
         ) as AuthPayload;
 
         req.user = {

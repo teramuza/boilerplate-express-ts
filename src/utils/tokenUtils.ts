@@ -1,6 +1,7 @@
 import jwt from 'jsonwebtoken';
+import { ENV } from '@constant/Environment';
 
-const JWT_SECRET = process.env.JWT_SECRET_KEY || 'your-secret-key';
+const JWT_SECRET = process.env[ENV.JWT_SECRET_KEY] || 'your-secret-key';
 const JWT_EXPIRES_IN = '7d'; // Token expires in 7 days
 
 export interface TokenPayload {

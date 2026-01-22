@@ -5,13 +5,14 @@ import helmet from 'helmet';
 import rateLimit from 'express-rate-limit';
 import routers from './components/routes';
 import logging from '@util/logging';
+import { ENV } from '@constant/Environment';
 
 // Load environment variables
 dotenv.config();
 
 const server: Express = express();
-const port = process.env.PORT || process.env.APP_PORT || 3000;
-const isProduction = process.env.NODE_ENV === 'production';
+const port = process.env[ENV.APP_PORT] || 3000;
+const isProduction = process.env[ENV.NODE_ENV] === 'production';
 
 // Security middleware
 server.use(helmet());
@@ -83,7 +84,7 @@ server.use((err: any, req: Request, res: Response, next: any) => {
 // Start server
 server.listen(port, () => {
     logging.info(`🚀 Server is running on port ${port}`);
-    logging.info(`📦 Environment: ${process.env.NODE_ENV || 'development'}`);
+    logging.info(`📦 Environment: ${process.env[ENV.NODE_ENV] || 'development'}`);
     logging.info(`🔒 Security: helmet ${isProduction ? '+ rate limiting' : ''} enabled`);
 });
 

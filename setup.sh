@@ -13,12 +13,13 @@ DEV_MODE=true
 # JWT Configuration
 JWT_SECRET_KEY=your-secret-key-change-this-in-production
 
-# Database (if needed)
-# DB_HOST=localhost
-# DB_PORT=5432
-# DB_NAME=your_database
-# DB_USER=your_user
-# DB_PASSWORD=your_password
+# Database Configuration (PostgreSQL)
+DB_HOST=localhost
+DB_PORT=5432
+DB_NAME=boilerplate_db
+DB_USER=postgres
+DB_PASSWORD=password
+DB_DIALECT=postgres
 EOF
 
 # Create .env.production
@@ -31,12 +32,15 @@ DEV_MODE=false
 # JWT Configuration
 JWT_SECRET_KEY=your-production-secret-key-CHANGE-THIS
 
-# Database (if needed)
-# DB_HOST=localhost
-# DB_PORT=5432
-# DB_NAME=your_database
-# DB_USER=your_user
-# DB_PASSWORD=your_password
+# Database Configuration (PostgreSQL)
+# For production, use DATABASE_URL or individual settings
+DB_HOST=localhost
+DB_PORT=5432
+DB_NAME=boilerplate_db_prod
+DB_USER=postgres
+DB_PASSWORD=your-production-password
+DB_DIALECT=postgres
+# DATABASE_URL=postgresql://user:password@host:port/database
 EOF
 
 # Copy .env.development to .env for local development

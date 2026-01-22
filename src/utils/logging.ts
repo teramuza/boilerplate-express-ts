@@ -1,5 +1,7 @@
+import { ENV } from '@constant/Environment';
+
 require('dotenv').config();
-const logging = process.env.DEV_MODE !== 'false';
+const logging = process.env[ENV.DEV_MODE] !== 'false';
 
 const error = (...data: any[]) => logging && console.error(...data);
 

@@ -7,6 +7,11 @@ node_modules/
 yarn.lock
 package-lock.json
 
+# Database
+*.sqlite
+*.sqlite3
+*.db
+
 # Build output
 dist/
 build/

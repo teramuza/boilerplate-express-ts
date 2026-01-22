@@ -21,10 +21,18 @@
     "lint": "npm run type-check && npm run format:check",
     "check-updates": "npm outdated || yarn outdated",
     "update-deps": "npm update || yarn upgrade",
+    "db:create": "sequelize-cli db:create",
+    "db:drop": "sequelize-cli db:drop",
+    "db:migrate": "sequelize-cli db:migrate",
+    "db:migrate:undo": "sequelize-cli db:migrate:undo",
+    "db:migrate:undo:all": "sequelize-cli db:migrate:undo:all",
+    "db:seed": "sequelize-cli db:seed:all",
+    "db:seed:undo": "sequelize-cli db:seed:undo:all",
+    "migration:generate": "sequelize-cli migration:generate --name",
+    "seed:generate": "sequelize-cli seed:generate --name",
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "echo \"✅ Dependencies installed successfully!\""
   },
-  "packageManager": "npm@10.0.0",
   "keywords": [
     "typescript",
     "express",
@@ -44,7 +52,10 @@
     "express": "^4.21.1",
     "express-rate-limit": "^7.4.1",
     "helmet": "^8.0.0",
-    "jsonwebtoken": "^9.0.2"
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.13.1",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.5"
   },
   "devDependencies": {
     "@types/bcrypt": "^5.0.2",
@@ -54,6 +65,7 @@
     "@types/node": "^20.17.10",
     "nodemon": "^3.1.7",
     "prettier": "^3.4.2",
+    "sequelize-cli": "^6.6.2",
     "ts-node": "^10.9.2",
     "tsconfig-paths": "^4.2.0",
     "typescript": "^5.7.2"
