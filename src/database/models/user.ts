@@ -46,7 +46,7 @@ export class User extends Model<
      * Get user without sensitive data
      */
     public toJSON(): Omit<UserAttributes, 'password'> {
-        const values = { ...this.get() };
+        const values = { ...this.get() } as any;
         delete values.password;
         return values;
     }
